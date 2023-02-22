@@ -1,12 +1,16 @@
 {
-  description = "An awesome machine-learning project";
+  description =
+    "The simplest, fastest repository for training/finetuning medium-sized GPTs.";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.11";
 
     utils.url = "github:numtide/flake-utils";
 
-    ml-pkgs.url = "github:nixvital/ml-pkgs";
+    # ml-pkgs.url = "github:katanallama/ml-pkgs";
+    ml-pkgs.url = "path:/home/bh/projects/ml-pkgs";
+    # ml-pkgs.url = "github:nixvital/ml-pkgs";
+
     ml-pkgs.inputs.nixpkgs.follows = "nixpkgs";
     ml-pkgs.inputs.utils.follows = "utils";
   };
@@ -16,17 +20,6 @@
       overlays.dev = nixpkgs.lib.composeManyExtensions [
         inputs.ml-pkgs.overlays.torch-family
         inputs.ml-pkgs.overlays.misc
-
-        # You can put your other overlays here, inline or with import. For example
-        # if you want to put an inline overlay, uncomment below:
-        #
-        # (final: prev: {
-        #   pythonPackagesExtension = prev.pythonPackagesExtension ++ [
-        #     (python-final: python-prev: {
-        #       my-package = ...;
-        #     })
-        #   ];
-        # })
       ];
     } // inputs.utils.lib.eachSystem [ "x86_64-linux" ] (system:
       let
@@ -46,10 +39,11 @@
               wandb
               tqdm
               datasets
-              # tiktoken
+              blobfile
+              tiktoken
             ]);
 
-          name = "torch-basics";
+          name = "nanoGPT";
         in pkgs.mkShell {
           inherit name;
 

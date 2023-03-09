@@ -1,0 +1,10 @@
+result
+__pycache__
+wandb
+*.bin
+*.pkl
+*.txt
+.direnv
+.envrc
+out
+out-shakespeare-char

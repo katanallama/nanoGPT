@@ -7,9 +7,8 @@
 
     utils.url = "github:numtide/flake-utils";
 
-    # ml-pkgs.url = "github:katanallama/ml-pkgs";
-    ml-pkgs.url = "path:/home/bh/projects/ml-pkgs";
-    # ml-pkgs.url = "github:nixvital/ml-pkgs";
+    ml-pkgs.url = "github:katanallama/ml-pkgs";
+    # ml-pkgs.url = "path:/home/bh/projects/ml-pkgs"; # for testing
 
     ml-pkgs.inputs.nixpkgs.follows = "nixpkgs";
     ml-pkgs.inputs.utils.follows = "utils";

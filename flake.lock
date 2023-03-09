@@ -10,14 +10,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1677094687,
-        "narHash": "sha256-zct3SPgFhunZSluPTsqGv/fQglUyXSTXUicATfwLKhc=",
-        "path": "/home/bh/projects/ml-pkgs",
-        "type": "path"
+        "lastModified": 1677094498,
+        "narHash": "sha256-ILenh63gCafchM5mfPPNc7HJ01/UbkliKi/abTfmaVs=",
+        "owner": "katanallama",
+        "repo": "ml-pkgs",
+        "rev": "7096b73f0405fcced7888a0f476459c21999a0ca",
+        "type": "github"
       },
       "original": {
-        "path": "/home/bh/projects/ml-pkgs",
-        "type": "path"
+        "owner": "katanallama",
+        "repo": "ml-pkgs",
+        "type": "github"
       }
     },
     "nixpkgs": {

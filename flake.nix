@@ -38,8 +38,9 @@
               wandb
               tqdm
               datasets
-              blobfile
               tiktoken
+              bitsandbytes
+              flash-attention
             ]);
 
           name = "nanoGPT";

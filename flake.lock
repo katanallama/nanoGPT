@@ -10,11 +10,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1677094498,
-        "narHash": "sha256-ILenh63gCafchM5mfPPNc7HJ01/UbkliKi/abTfmaVs=",
+        "lastModified": 1679318036,
+        "narHash": "sha256-6dl63gQGG+ANxJbRQL593MYGO28cUsrZ7Eghicc7PkU=",
         "owner": "katanallama",
         "repo": "ml-pkgs",
-        "rev": "7096b73f0405fcced7888a0f476459c21999a0ca",
+        "rev": "17f98b934586059452f5c6d42bd1f9a55f2dab1d",
         "type": "github"
       },
       "original": {
